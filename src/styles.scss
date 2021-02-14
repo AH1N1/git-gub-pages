@@ -1,0 +1,25 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+@import '~@angular/material/theming';
+
+
+$custom-typography: mat-typography-config(
+$font-family: 'Lexend Mega, sans-serif'
+//$display-1: mat-typography-level(24px, 48px, 700)
+  /*,
+$headline: mat-typography-level(32px, 48px, 700),
+$body-1: mat-typography-level(16px, 24px, 500)*/
+);
+@include mat-base-typography($custom-typography);
+
