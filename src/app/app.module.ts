@@ -9,11 +9,15 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
 import { SideContainerComponent } from './components/side-container/side-container.component';
+import { WelcomeBannerComponent } from './components/welcome-banner/welcome-banner.component';
+import { NavBarHeavyComponent } from './components/nav-bar-heavy/nav-bar-heavy.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SideContainerComponent
+    SideContainerComponent,
+    WelcomeBannerComponent,
+    NavBarHeavyComponent
   ],
   imports: [
     BrowserModule,
