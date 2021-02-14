@@ -1,17 +1,56 @@
-<mat-toolbar>
-  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
-    <mat-icon>menu</mat-icon>
-  </button>
-  <span>PEPENATORS</span>
-  <span class="example-spacer"></span>
-  <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-    <mat-icon>favorite</mat-icon>
-  </button>
-  <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
-    <mat-icon>share</mat-icon>
-  </button>
-</mat-toolbar>
-
+<!--<mat-toolbar>-->
+<!--&lt;!&ndash;  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">&ndash;&gt;-->
+<!--&lt;!&ndash;    <mat-icon>menu</mat-icon>&ndash;&gt;-->
+<!--&lt;!&ndash;  </button>&ndash;&gt;-->
+<!--  <span>Pepenat00rs</span>-->
+<!--&lt;!&ndash;  <span class="example-spacer"></span>&ndash;&gt;-->
+<!--&lt;!&ndash;  <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">&ndash;&gt;-->
+<!--&lt;!&ndash;    <mat-icon>favorite</mat-icon>&ndash;&gt;-->
+<!--&lt;!&ndash;  </button>&ndash;&gt;-->
+<!--&lt;!&ndash;  <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">&ndash;&gt;-->
+<!--&lt;!&ndash;    <mat-icon>share</mat-icon>&ndash;&gt;-->
+<!--&lt;!&ndash;  </button>&ndash;&gt;-->
+<!--</mat-toolbar>-->
+<div class="background-img">
+  <img class="img" src="assets/tlo_top.jpg"/>
+  <div class="content">
+    <div class="card">
+      <h1 class="header">Pepenat00rs</h1>
+      <h2 class="header">Jeden Pep</h2>
+      <h3 class="header">Jeden blog</h3>
+      <h4 class="header">Tysiące oddanych fanów</h4>
+    </div>
+  </div>
+</div>
+<!--<div class="no-img">-->
+<mat-card>
+  <mat-card-content>
+    <mat-grid-list cols="4" rowHeight="2:1">
+      <mat-grid-tile>
+        <button mat-stroked-button><h2>Cytaty</h2></button>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <button mat-stroked-button><h2>Słowniczek</h2></button>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <button mat-stroked-button><h2>Jakiś dział</h2></button>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <button mat-stroked-button><h2>Prace fanów</h2></button>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </mat-card-content>
+</mat-card>
+<!--</div>-->
+<div class="background-img">
+  <img class="img" src="assets/tlo_bottom.jpg"/>
+  <div class="content">
+    <div class="card">
+      <h2>O mnie</h2>
+    </div>
+  </div>
+</div>
+<!--<img src="https://ocdn.eu/images/pulscms/Zjg7MDA_/d0037a763b90b81f1af564d009f8408f.jpg">-->
 
 <!-- TODO:  przeniesc do oddzielnego modulu wraz zz dyrektywami do obslugi-->
 <app-side-container [side]="'left'">
@@ -41,8 +80,8 @@
       </p>
     </mat-card-content>
     <mat-card-actions>
-<!--      <button mat-button>LIKE</button>-->
-<!--      <button mat-button>SHARE</button>-->
+      <!--      <button mat-button>LIKE</button>-->
+      <!--      <button mat-button>SHARE</button>-->
     </mat-card-actions>
   </mat-card>
 </app-side-container>
@@ -53,7 +92,7 @@
       <mat-card-title>Pepe San</mat-card-title>
       <mat-card-subtitle>Zawisza</mat-card-subtitle>
     </mat-card-header>
-    <img mat-card-image src="assets/pepe_san.png" alt="Photo of a Shiba Inu">
+    <img mat-card-image src="assets/pepe_san.png" alt="Photo of a Shiba Inu" style="border-radius: 50%">
     <mat-card-content>
       <p>
         'Krupałke jak na ten moment na 90% będę dam znać wieczorem już na 100.'
