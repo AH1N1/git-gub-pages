@@ -13,16 +13,13 @@
 
 .background-img{
   width: 100%;
-  height: fit-content;
+  height: 100%;
   overflow: hidden;
   position: relative;
 }
 
 .background-img .img{
-  /*width: 100%;*/
-  /*overflow: hidden;*/
-  /*position: absolute;*/
-  /*z-index: 10;*/
+  height: 100%;
 }
 
 .background-img .content{
