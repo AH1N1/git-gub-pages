@@ -6,7 +6,7 @@ const SIDE_RIGHT = 'right';
 @Component({
   selector: 'app-side-container',
   templateUrl: './side-container.component.html',
-  styleUrls: ['./side-container.component.css']
+  styleUrls: ['./side-container.component.scss']
 })
 export class SideContainerComponent implements OnInit {
   @Input()

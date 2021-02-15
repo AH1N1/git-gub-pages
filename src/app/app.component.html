@@ -1,103 +1,57 @@
-<app-welcome-banner [src]="'assets/tlo_top.jpg'">
-  <h1 class="mat-display-4">Pepenat00rs</h1>
-  <p class="mat-display-3 margin-0">Jeden Pep</p>
-  <p class="mat-display-2 margin-0">Jeden blog</p>
-  <p class="mat-display-1 margin-0">Setki fanów</p>
-</app-welcome-banner>
-<!--<div class="background-img">-->
-<!--  <img class="img"/>-->
-<!--  <div class="content">-->
-<!--    <div class="card">-->
-
-<!--    </div>-->
-<!--  </div>-->
-<!--</div>-->
-<!--<div class="no-img">-->
-<!--<mat-card>-->
-<!--  <mat-card-content>-->
-<!--    <mat-grid-list cols="4" rowHeight="2:1">-->
-<!--      <mat-grid-tile>-->
-<!--        <button mat-stroked-button><h2>Cytaty</h2></button>-->
-<!--      </mat-grid-tile>-->
-<!--      <mat-grid-tile>-->
-<!--        <button mat-stroked-button><h2>Słowniczek</h2></button>-->
-<!--      </mat-grid-tile>-->
-<!--      <mat-grid-tile>-->
-<!--        <button mat-stroked-button><h2>Jakiś dział</h2></button>-->
-<!--      </mat-grid-tile>-->
-<!--      <mat-grid-tile>-->
-<!--        <button mat-stroked-button><h2>Prace fanów</h2></button>-->
-<!--      </mat-grid-tile>-->
-<!--    </mat-grid-list>-->
-<!--  </mat-card-content>-->
-<!--</mat-card>-->
-<!--</div>-->
-
-<mat-toolbar style="height:300px;">
-  <button mat-stroked-button>Cytaty</button>
-  <button mat-stroked-button><h2>Słowniczek</h2></button>
-  <button mat-stroked-button><h2>Postacie</h2></button>
-  <button mat-stroked-button><h2>Prace fanów</h2></button>
-</mat-toolbar>
-
-
-<!--//todo: link do postaci oraz slowniczka dla vegeshmat-->
-<app-welcome-banner [src]="'assets/tlo_bottom.jpg'">
-  <p class="mat-display-3 ">Kim jest?</p>
-  <p class="mat-body-1 ">Dla jednych zwykły człowiek, dla innych wspaniała osobistość. Tylko czy aby na pewno jedna?</p>
-  <p class="mat-body-1 ">Pepe ma tyle wcieleń ile jest <span>vegeshmat</span> na świecie, ale część z nich udało nam się
-    poznać. Wszystkie znane postacie Pepa możesz znaleźć w dziale <span class="mat-body-2">postacie</span>. </p>
-</app-welcome-banner>
-
-
+<router-outlet></router-outlet>
+<app-footer></app-footer>
 <!-- TODO:  przeniesc do oddzielnego modulu wraz zz dyrektywami do obslugi-->
-<app-side-container [side]="'left'">
-  <mat-card class="example-card">
-    <mat-card-header>
-      <mat-card-title>Oazowy San</mat-card-title>
-      <mat-card-subtitle>Wielebny</mat-card-subtitle>
-    </mat-card-header>
-    <img mat-card-image src="assets/pepe_san.png" alt="Photo of a Shiba Inu">
-    <mat-card-content>
-      <p>
-        'Beka z ruchania'
-      </p>
-    </mat-card-content>
-  </mat-card>
-</app-side-container>
-<app-side-container [side]="'right'">
-  <mat-card class="example-card">
-    <mat-card-header>
-      <mat-card-title>Shugi San</mat-card-title>
-      <mat-card-subtitle>Predator</mat-card-subtitle>
-    </mat-card-header>
-    <img mat-card-image src="assets/pepe_san.png" alt="Photo of a Shiba Inu">
-    <mat-card-content>
-      <p>
-        'Mikołaj nie masz czaem jakiejś czeczenki do wychowania?'
-      </p>
-    </mat-card-content>
-    <mat-card-actions>
-      <!--      <button mat-button>LIKE</button>-->
-      <!--      <button mat-button>SHARE</button>-->
-    </mat-card-actions>
-  </mat-card>
-</app-side-container>
+<!--<app-side-container [side]="'left'">-->
+<!--  <mat-card class="example-card">-->
+<!--    <mat-card-header>-->
+<!--      <mat-card-title>Oazowy San</mat-card-title>-->
+<!--      <mat-card-subtitle>Wielebny</mat-card-subtitle>-->
+<!--    </mat-card-header>-->
+<!--    <img mat-card-image src="assets/pepe_san.png" alt="Photo of a Shiba Inu">-->
+<!--    <mat-card-content>-->
+<!--      <p>-->
+<!--        'Beka z ruchania'-->
+<!--      </p>-->
+<!--    </mat-card-content>-->
+<!--  </mat-card>-->
+<!--</app-side-container>-->
+<!--<app-side-container [side]="'right'">-->
+<!--  <mat-card class="example-card">-->
+<!--    <mat-card-header>-->
+<!--      <mat-card-title>Shugi San</mat-card-title>-->
+<!--      <mat-card-subtitle>Predator</mat-card-subtitle>-->
+<!--    </mat-card-header>-->
+<!--    <img mat-card-image src="assets/pepe_san.png" alt="Photo of a Shiba Inu">-->
+<!--    <mat-card-content>-->
+<!--      <p>-->
+<!--        'Mikołaj nie masz czaem jakiejś czeczenki do wychowania?'-->
+<!--      </p>-->
+<!--    </mat-card-content>-->
+<!--    <mat-card-actions>-->
+<!--      &lt;!&ndash;      <button mat-button>LIKE</button>&ndash;&gt;-->
+<!--      &lt;!&ndash;      <button mat-button>SHARE</button>&ndash;&gt;-->
+<!--    </mat-card-actions>-->
+<!--  </mat-card>-->
+<!--</app-side-container>-->
 
-<app-side-container [side]="'left'">
-  <mat-card class="example-card">
-    <mat-card-header>
-      <mat-card-title>Pepe San</mat-card-title>
-      <mat-card-subtitle>Zawisza</mat-card-subtitle>
-    </mat-card-header>
-    <img mat-card-image src="assets/pepe_san.png" alt="Photo of a Shiba Inu" style="border-radius: 50%">
-    <mat-card-content>
-      <p>
-        'Krupałke jak na ten moment na 90% będę dam znać wieczorem już na 100.'
-      </p>
-    </mat-card-content>
-  </mat-card>
-</app-side-container>
+<!--<app-side-container [side]="'left'">-->
+<!--  <mat-card class="example-card">-->
+<!--    <mat-card-header>-->
+<!--      <mat-card-title>Pepe San</mat-card-title>-->
+<!--      <mat-card-subtitle>Zawisza</mat-card-subtitle>-->
+<!--    </mat-card-header>-->
+<!--    <img mat-card-image src="assets/pepe_san.png" alt="Photo of a Shiba Inu" style="border-radius: 50%">-->
+<!--    <mat-card-content>-->
+<!--      <p>-->
+<!--        'Krupałke jak na ten moment na 90% będę dam znać wieczorem już na 100.'-->
+<!--      </p>-->
+<!--    </mat-card-content>-->
+<!--  </mat-card>-->
+<!--</app-side-container>-->
+
+
+
+
 <!--<mat-grid-list cols="2" rowHeight="">-->
 <!--  <mat-grid-tile>-->
 <!--    <mat-card class="example-card">-->

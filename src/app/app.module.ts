@@ -11,13 +11,27 @@ import {MatCardModule} from '@angular/material/card';
 import { SideContainerComponent } from './components/side-container/side-container.component';
 import { WelcomeBannerComponent } from './components/welcome-banner/welcome-banner.component';
 import { NavBarHeavyComponent } from './components/nav-bar-heavy/nav-bar-heavy.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { AppRoutingModule } from './app-routing.module';
+import { HomeComponent } from './components/pages/home/home.component';
+import {RouterModule} from '@angular/router';
+import { QuotesComponent } from './components/pages/quotes/quotes.component';
+import { GlossaryComponent } from './components/pages/glossary/glossary.component';
+import { WorksComponent } from './components/pages/works/works.component';
+import { FormsComponent } from './components/pages/forms/forms.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SideContainerComponent,
     WelcomeBannerComponent,
-    NavBarHeavyComponent
+    NavBarHeavyComponent,
+    FooterComponent,
+    HomeComponent,
+    QuotesComponent,
+    GlossaryComponent,
+    WorksComponent,
+    FormsComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +40,11 @@ import { NavBarHeavyComponent } from './components/nav-bar-heavy/nav-bar-heavy.c
     MatIconModule,
     MatToolbarModule,
     MatButtonModule,
-    MatCardModule
+    MatCardModule,
+    RouterModule,
+
+
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

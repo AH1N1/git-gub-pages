@@ -1,0 +1,32 @@
+@import "../../../screen";
+
+.footer {
+  width: 100%;
+  //background-image: linear-gradient(#ffffff, #e3e8e4);
+  //overflow: hidden;
+  @media(max-width: $desktop) {
+    //font-size: 10px;
+  }
+}
+
+.left {
+  width: calc(50% - 4em);
+  display: inline-block;
+  padding: 2em;
+  @media(max-width: $desktop) {
+    display: block;
+    width: calc(100% - 2em);
+    padding: 1em;
+  }
+}
+
+.right {
+  width: calc(50% - 4em);;
+  display: inline-block;
+  padding: 2em;
+  @media(max-width: $desktop) {
+    display: block;
+    width: calc(100% - 2em);
+    padding: 1em;
+  }
+}
