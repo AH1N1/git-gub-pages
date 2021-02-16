@@ -1,4 +1,5 @@
 @import "../../../screen";
+@import "../../../colors";
 :host{
   width:100%;
 }
@@ -17,6 +18,10 @@
   }
 }
 
+.light{
+  padding: 1em 0 !important;
+}
+
 /*:host ::ng-deep */
 button {
   font-size: 1em;
@@ -26,3 +31,7 @@ button {
     margin: 1em 0;
   }
 }
+
+//.home{
+//  color: $color-primary-light;
+//}

@@ -1,9 +1,4 @@
-import {Component, OnInit} from '@angular/core';
-
-
-interface ButtonConfig{
-
-}
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-nav-bar-heavy',
@@ -11,8 +6,11 @@ interface ButtonConfig{
   styleUrls: ['./nav-bar-heavy.component.scss']
 })
 export class NavBarHeavyComponent implements OnInit {
-  buttons: [];
-  stroke = false;
+  @Input()
+  light: boolean;
+
+  @Input()
+  showMain: boolean;
 
   constructor() {
   }

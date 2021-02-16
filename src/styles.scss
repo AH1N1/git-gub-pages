@@ -15,11 +15,33 @@ body {
 }
 
 .color-primary {
-  color: mat-color($app-primary);
+  color: $color-primary-light
 }
 
 .color-accent {
-  color: mat-color($app-accent);
+  color: $color-accent-light
 }
 
+@mixin app-link {
+  color: $color-primary-light;
+  font-size: 200%;
+  :hover{
+    color: $color-primary-dark;
+  }
+}
+
+.link-1{
+  @include app-link;
+  font-size: initial;
+  :hover{
+    color: $color-primary-dark;
+  }
+}
+
+.link-2{
+  @include app-link;
+  :hover{
+    color: $color-primary-dark;
+  }
+}
 

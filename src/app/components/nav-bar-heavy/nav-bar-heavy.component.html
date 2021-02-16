@@ -1,6 +1,7 @@
-<div class="nav-bar-heavy">
+<div class="nav-bar-heavy" [class.light]="light">
     <button mat-stroked-button routerLink="/quotes">Cytaty</button>
     <button mat-stroked-button routerLink="/glossary">Słowniczek</button>
+    <button mat-stroked-button routerLink="/home" color="primary" *ngIf="showMain">Główna</button>
     <button mat-stroked-button routerLink="/forms">Postacie</button>
     <button mat-stroked-button routerLink="/works">Prace fanów</button>
 </div>

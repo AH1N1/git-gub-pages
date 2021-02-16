@@ -1,0 +1,57 @@
+.tree-container {
+  width: 100%;
+  height: 500px; //todo test
+  display: inline-flex;
+}
+
+.trunk{
+  width: 2px;
+  height: 100%;
+  background: black;
+
+}
+
+.left {
+  width: calc(50% - 1px);
+  text-align: right;
+}
+
+.right {
+  width: calc(50% - 1px);
+}
+
+.quote-wrapper{
+  width:100%;
+}
+
+.quote{
+  margin-top: 30px;
+  background: black;
+  //border: 1px solid black;
+  width:50px;
+  height:100px;
+  transition: width 1s;
+}
+
+//todo: niech raz rozsuwa sie w lewo raz w prawo na zmiane
+// niech w kolku bedzie jakis jpg ktory przykleja sie do rozsuwanego paska
+
+.right .quote{
+  border-left: 0;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+
+}
+
+.left .quote{
+  margin-left: auto;
+  margin-right: 0;
+  border-right: 0;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+
+.quote:hover{
+  width:90%
+}
+
